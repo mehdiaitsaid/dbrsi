@@ -1,0 +1,40 @@
+# curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+# echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+# apt update
+# apt install mongodb-org
+# systemctl start mongod.service
+# systemctl enable mongod
+# [Test] mongo --eval 'db.runCommand({ connectionStatus: 1 })'
+# mongo
+# use admin
+# db.createUser(
+  {
+    user: "rsimongo",
+    pwd:  "root",   
+    roles: [ { role: "readWrite", db: "rsi" } ]
+  }
+)
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# ufw allow from any to any port 27017
+# ufw enable
+# nano /etc/mongod.conf
+# 

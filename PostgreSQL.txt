@@ -1,0 +1,28 @@
+# apt install postgresql postgresql-contrib
+# systemctl start postgresql.service
+# sudo -i -u postgres
+# psql
+# \q
+# sudo -u postgres psql
+# sudo -u postgres createuser --interactive [make a new User named "rsi-post"]
+# sudo -u postgres createdb rsi_db
+# sudo adduser rsi-post
+# sudo -u rsi-post psql
+# CREATE TABLE playground (
+    equip_id serial PRIMARY KEY,
+    type varchar (50) NOT NULL,
+    color varchar (25) NOT NULL,
+    location varchar(25) check (location in ('north', 'south', 'west', 'east', 'northeast', 'southeast', 'southwest', 'northwest')),
+    install_date date
+);
+# /d
+# INSERT INTO playground (type, color, location, install_date) VALUES ('slide', 'blue', 'south', '2017-04-28');
+# INSERT INTO playground (type, color, location, install_date) VALUES ('swing', 'yellow', 'northwest', '2018-08-16');
+# exit
+# 
+Setup phppgadmin
+# sudo su postgres
+# createuser -P --interactive
+# apt install phppgadmin php-pgsql -y
+# 
+# 
