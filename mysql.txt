@@ -2,8 +2,7 @@
 # mysql_secure_installation
 # systemctl restart mysql.service
 # mysql -u root -p
-# GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, 
-RELOAD on *.* TO 'rsi'@'localhost' WITH GRANT OPTION;
+# GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'rsi'@'localhost' WITH GRANT OPTION;
 # mysql -u rsi -p
 # apt install phpmyadmin
 # cd /usr/share/phpmyadmin
